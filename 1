@@ -1,13 +1,1 @@
-This is a Windows command that launches the Island browser with specific flags:
 
-- "C:\Program Files\Island\Island\Application\Island.exe" — The Island browser executable (standard Windows install path)
-
-- --origin-trial-disabled-features=CanvasTextNg|WebAssemblyCustomDescriptors — Disables two specific Chromium origin trial features:
-  - CanvasTextNg — A newer canvas text rendering implementation
-  - WebAssemblyCustomDescriptors — A WebAssembly proposal for custom property descriptors
-  
-  Origin trials are experimental web platform features that sites can opt into. This flag prevents these specific trials from activating, likely to avoid compatibility issues or known bugs.
-
-- --restart — Tells the browser to restart (typically used when the browser is relaunching itself, e.g., after an update or a crash recovery).
-
-In short: It's restarting the Island browser with two experimental web features explicitly disabled. This is likely an auto-generated command from the browser's own update/restart mechanism, not something a user would type manually.
