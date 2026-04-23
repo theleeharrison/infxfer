@@ -1,1 +1,13 @@
+Great question. To clarify how Island browser handles downloads:
 
+There is no "sync" between folders. Island browser, like any Chromium-based browser, simply has a configured download location. By default, it uses the same system Downloads folder that other browsers use (e.g., C:\Users\<username>\Downloads on Windows or ~/Downloads on Mac).
+
+So when a user installs Island browser:
+
+- By default: Downloads from Island go to the same Downloads folder the user already uses. There's no separate "Island folder" created, and no syncing occurs. Files previously downloaded via Chrome/Edge are already in that folder, and new Island downloads land there too.
+
+- If an admin configures a custom download path: The organization's IT admin can set a different default download location via Island's management console policies. In that case, Island downloads would go to that custom path, but again, there's no syncing of existing files from the old location.
+
+- Download restrictions: Admins can also apply DLP (Data Loss Prevention) policies to control what can be downloaded, where it can be saved, and whether downloads are scanned, but this is about policy enforcement, not folder syncing.
+
+In short: Island browser uses a download directory (the system default unless overridden by policy). It does not copy, move, or sync files from any other folder. Each download is simply saved to whichever path is configured at the time of download.
